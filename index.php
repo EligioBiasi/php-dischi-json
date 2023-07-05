@@ -24,11 +24,17 @@
             <main>
                 <div class="container d-flex flex-wrap">
                     <div class="card m-1" v-for="(disc, index) in discs" :key="index">
-                        <img src="" class="card-img-top" alt="Disc Poster">
-                        <div class="card-body">
-                            <h5 class="card-title"></h5>
-                            <p class="card-text"></p>
-                            <p class="card-text"></p>
+                        <img :src="disc.poster" class="card-img-top" alt="Disc Poster">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">
+                                {{disc.title}}
+                            </h5>
+                            <p class="card-text">
+                                {{disc.author}}
+                            </p>
+                            <p class="card-text">
+                                {{disc.year}}
+                            </p>
                         </div>
                     </div>
                 </div>
