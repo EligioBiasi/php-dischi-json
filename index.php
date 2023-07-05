@@ -21,11 +21,22 @@
                     <img src="./images/Spotify_icon.svg.png" alt="Spotify Logo" id="logo" class="py-3">
                 </div>
             </header>
-                
+            <main>
+                <div class="container d-flex flex-wrap">
+                    <div class="card m-1" v-for="(disc, index) in discs" :key="index">
+                        <img src="" class="card-img-top" alt="Disc Poster">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text"></p>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </main>
             
             
         </div>
 
-        <script src="./database/main.js"></script>
+        <script src="./script/main.js"></script>
     </body>
 </html>
