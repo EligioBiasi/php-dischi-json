@@ -5,3 +5,11 @@ header{
 #logo{
     width: 50px;
 }
+
+main{
+    background-color: rgb(29 45 60);
+}
+
+div.card{
+    width: calc((100% / 3) - 0.5rem);
+}
