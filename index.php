@@ -23,16 +23,16 @@
             </header>
             <main>
                 <div class="container d-flex flex-wrap">
-                    <div class="card m-1" v-for="(disc, index) in discs" :key="index">
-                        <img :src="disc.poster" class="card-img-top" alt="Disc Poster">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">
+                    <div class="card mx-3 my-4 p-4" v-for="(disc, index) in discs" :key="index">
+                        <img :src="disc.poster" alt="Disc Poster">
+                        <div class="card-body text-center text-white">
+                            <h5 class="card-title fw-semibold">
                                 {{disc.title}}
                             </h5>
                             <p class="card-text">
                                 {{disc.author}}
                             </p>
-                            <p class="card-text">
+                            <p class="card-text fw-semibold">
                                 {{disc.year}}
                             </p>
                         </div>
